@@ -31,6 +31,9 @@ void imprimirPregunta(Pregunta pregunta) {
  */
 
 char capturarRespuesta() {
+    char respuesta;
+    printf("Ingrese su respuesta: ");
+    scanf("%s", &respuesta);
     //AGREGAR LA IMPLEMENTACIÓN PARA LEER LA RESPUESTA DEL JUGADOR.
     //NO MODIFIQUES LA FIRMA DE LA FUNCIÓN.
 }
