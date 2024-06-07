@@ -22,6 +22,7 @@ typedef struct {
 void imprimirPregunta(Pregunta pregunta) {
     //AGREGAR LA IMPLEMENTACIÓN PARA IMPRIMIR EN CONSOLA LA PREGUNTA Y LAS OPCIONES.
     //NO MODIFIQUES LA FIRMA DE LA FUNCIÓN.
+    if 
 }
 
 /**
@@ -48,6 +49,48 @@ char capturarRespuesta() {
 int verificarRespuesta(Pregunta pregunta, char respuesta) {
     //AGREGAR LA IMPLEMENTACIÓN PARA VERIFICAR SI RESPONDIÓ BIEN LA PREGUNTA.
     //NO MODIFIQUES LA FIRMA DE LA FUNCIÓN. 
+    if(1){
+        print("¿Qué es Git?\n
+            a) Un sistema de control de versiones\n
+            b) Un lenguaje de programación\n
+            c) Un editor de texto\n
+            d) Un sistema operativo")
+    }else if(2){"¿Qué comando se utiliza en Git para clonar un repositorio remoto?\n
+            a) git push\n
+            b) git fetch\n
+            c) git clone\n
+            d) git pull"
+    }else if(3){"¿Cómo se llama el proceso en Git de fusionar ramas?\n
+            a) Clonación\n
+            b) Pull Request\n
+            c) Merge\n
+            d) Branching"
+    }else if(4){"¿Qué comando se utiliza en Git para crear una nueva rama?\n
+            a) git checkout\n
+            b) git branch\
+            c) git add\n
+            d) git commit"
+    }else if(5){"¿Qué comando se utiliza en Git para ver el estado de los archivos en el repositorio?\n
+            a) git add\n
+            b) git push\n
+            c) git commit\n
+            d) git status"
+    }else if(6){"¿Qué comando se utiliza en Git para ver el historial de commits?\n
+            a) git log \n
+            b) git history\n
+            c) git show\n
+            d) git diff"
+    }else if(7){"¿Qué comando en Git se utiliza para cambiar de una rama a otra?\n
+            a) git branch\n
+            b) git checkout\n
+            c) git commit\n
+            d) git merge"
+    }else if(8){"¿Qué comando se utiliza en Git para enviar cambios locales a un repositorio remoto?\n
+            a) git fetch\n
+            b) git push\n
+            c) git pull\n
+            d) git merge"
+    }
 }
 
 
@@ -81,7 +124,7 @@ int main() {
         fscanf(archivo, "%c\n", &preguntas[i].respuestaCorrecta); // Leer la respuesta correcta
     }
 
-    fclose(archivo); 
+    fclose(archivo);
 
     // Funcionamiento del juego
 
