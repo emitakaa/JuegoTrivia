@@ -47,7 +47,20 @@ char capturarRespuesta() {
 
 int verificarRespuesta(Pregunta pregunta, char respuesta) {
     //AGREGAR LA IMPLEMENTACIÓN PARA VERIFICAR SI RESPONDIÓ BIEN LA PREGUNTA.
-    //NO MODIFIQUES LA FIRMA DE LA FUNCIÓN. 
+    //NO MODIFIQUES LA FIRMA DE LA FUNCIÓN.
+    
+    int rc = 0; // Inicializar la variable rc para almacenar el resultado.
+    if (respuesta == pregunta.respuestaCorrecta) 
+    {
+        printf("�Correcto!\n");
+        rc = 1;
+    } 
+    else 
+    {
+        printf("Incorrecto. La respuesta correcta era %c.\n", pregunta.respuestaCorrecta);
+    }
+    return rc;
+    
 }
 
 
